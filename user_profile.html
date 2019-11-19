@@ -5,23 +5,96 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Home-1</title>
-        <!-- Google Font -->
-        <link href="//db.onlinewebfonts.com/c/d31d488d2171c1668c15962fc6cf1ef7?family=Gotham+Rounded" rel="stylesheet" type="text/css"/>     
-        <!-- Bootstrap 4.2.1 -->
-        <link rel="stylesheet" href="css/plugins/bootstrap.min.css">
-        <!-- Magnific Popup -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
-        <!-- Font Awesome -->
-        <link
-            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-            rel="stylesheet">
-        <!-- Main CSS -->
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/newcss.css">
+         <!-- Google Font -->
+         <link href="//db.onlinewebfonts.com/c/d31d488d2171c1668c15962fc6cf1ef7?family=Gotham+Rounded" rel="stylesheet" type="text/css"/>     
+         <!-- Bootstrap 4.2.1 -->
+         <link rel="stylesheet" href="css/plugins/bootstrap.min.css">
+         <!-- Magnific Popup -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+         <!-- Font Awesome -->
+         <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+         <link
+             href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+             rel="stylesheet">
+         <!-- nestable CSS -->
+         <link rel="stylesheet" href="css/nestable.css">
+         <!-- Main CSS -->
+         <link rel="stylesheet" href="css/main.css">
+         <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+         <link rel="stylesheet" href="css/newcss.css">
+         <link rel="stylesheet" href="css/dropify.min.css">
+         <style>
+            .profile-sidebar {
+            margin: 0;
+            padding: 0px;
+            background-color: #f1f1f1;
+            position: inherit;
+            height: 100%;
+            overflow: auto;
+            }
+
+            .profile-sidebar a {
+            display: block;
+            color: black;
+            padding: 10px;
+            text-decoration: none;
+            }
+            
+            .profile-sidebar a.active {
+            background-color: #4CAF50;
+            color: white;
+            }
+
+            .profile-sidebar a:hover:not(.active) {
+            background-color: #555;
+            color: white;
+            }
+
+            div.content {
+            margin-left: 200px;
+            padding: 1px 16px;
+            height: 1000px;
+            }
+
+            @media screen and (max-width: 700px) {
+            .profile-sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+            .profile-sidebar a {float: left;}
+            div.content {margin-left: 0;}
+            }
+
+            @media screen and (max-width: 400px) {
+            .profile-sidebar a {
+                text-align: center;
+                float: none;
+            }
+            }
+             
+
+                .modal-body {
+                position:relative;
+                padding:0px;
+                }
+                .close {
+                position:absolute;
+                right:-30px;
+                top:0;
+                z-index:999;
+                font-size:2rem;
+                font-weight: normal;
+                color:#fff;
+                opacity:1;
+                }
+         </style>
     </head>
     <body>
         <!-- Page Loading -->
         <div class="se-pre-con"></div>
+
+        <script>var shopcartSettings = {"shopcart_top_offset":120,"side_offset":20,"site_width":1150,"shopcart_icon_color":"#FFFFFF","shopcart_back_color":"#2969b0","shopcart_icon_size":48,"sc_count_color":"#FFFFFF","sc_count_back_color":"#fc26ae","sc_count_size":12,"checkout_button":"Check Out with"};</script>
 
         <!-- ========== Start Navbar ========== -->
         <nav class="navbar navbar-expand-lg navbar-dark  fixed-top">
@@ -71,12 +144,12 @@
         <!-- ========== End Navbar ========== -->
 
 
-        <section style="margin: 150px 0px;">
-            <div class="container">
+        <section style="margin: 104px 0px 0px  0px;">
+            <div class="container-fluid">
                 <div class="row my-2">
-                    <div class="col-lg-3 profile-sidebar order-lg-1 text-center">
+                    <div class="col-lg-2 col-md-2 col-sm-12 profile-sidebar  text-center">
                         <!-- SIDEBAR USERPIC -->
-                                <div class="profile-userpic">
+                                <div class="profile-userpic" style="margin-top: 30px;">
                                 <img src="https://media.rockstargames.com/chinatownwars/global/downloads/avatars/zhou_256x256.jpg" class="img-responsive" alt="">
                                 </div>
                                 <!-- END SIDEBAR USERPIC -->
@@ -97,20 +170,20 @@
                                 </div>
                                 <!-- END SIDEBAR BUTTONS -->
                                 <div class="nav-menu pt-3">
-                                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                        <div class="nav flex-column nav-pills " id="v-pills-tab" role="tablist" aria-orientation="vertical">
                                                 <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
                                                 <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
+                                                <a class="nav-link" id="v-pills-videos-tab" data-toggle="pill" href="#v-pills-videos" role="tab" aria-controls="v-pills-videos" aria-selected="false">Videos</a>
                                                 <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
                                         </div>
                                 </div>
                     </div>
-                    <div class="col-lg-9 order-lg-2">
+                    <div class="col-lg-10 col-md-10 col-sm-12">
                         <div class="tab-content" id="v-pills-tabContent">
                                 <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
                                         <h5 class="mb-3">About</h5>
                                         <div class="row">
                                             <div class="col-md-6">
-                                                
                                                 <p>
                                                     Web Designer, UI/UX Engineer
                                                 </p>
@@ -214,7 +287,7 @@
                                             </div>
                                         </div>
                                 </div>
-                                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                <div class="tab-pane fade " id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
                                         <h5 class="mb-3">Your Profile</h5>
                                         <form role="form">
                                                 <div class="form-group row">
@@ -304,14 +377,343 @@
                                                 </div>
                                             </form>
                                 </div>
+
+                                <div class="tab-pane fade" id="v-pills-videos" role="tabpanel" aria-labelledby="v-pills-videos-tab">
+                                    <section>
+                                        <div class="container">
+                                            <div class="row mb-15">
+                                                    <div class="offset-md-9 col-md-3">
+                                                            <a href="#" class="rounded-btn  add-videos-btn float-right">
+                                                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                                                Add Videos
+                                                            </a>
+                                                    </div>
+                                                    <div class="offset-md-9 col-md-3">
+                                                            <a href="#" class="rounded-btn  back-videos-btn float-right hide">
+                                                                    <i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i>
+                                                                Back
+                                                            </a>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </section>
+                                    <!-- ========== Start you may also like========== -->
+                                     <section class="you-may mb-60 hide" id="add-videos-form">
+                                            <div class="">
+                                                <h4 class="h4 mb-30">
+                                                        Add Videos
+                                                </h4>
+                                                <div class="row d-flex align-items-center">
+                                                    <div class="col-lg-12">
+                                                            <form role="form">
+                                                                    <div class="form-group row">
+                                                                            <label class="col-lg-3 col-form-label form-control-label">Choose Video / Link</label>
+                                                                            <div class="col-lg-9">
+                                                                                <input type="file" id="input-file-max-fs" class="dropify" data-max-file-size="2M" />
+                                                                                <div class="text-center">
+                                                                                    <h4 style="color: #6c757d; padding: 10px;">[ or ]</h4>
+                                                                                </div>
+                                                                                <input class="form-control" type="text" value="" cols="" placeholder="(Paste your video link here )">
+                                                                            </div>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label class="col-lg-3 col-form-label form-control-label">Title</label>
+                                                                        <div class="col-lg-9">
+                                                                            <input class="form-control" type="text" value="">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label class="col-lg-3 col-form-label form-control-label">Description</label>
+                                                                        <div class="col-lg-9">
+                                                                            <textarea class="form-control" name="" id=""  rows="6"></textarea>
+                                                                            <input class="form-control" type="text" value="">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                            <label class="col-lg-3 col-form-label form-control-label">Tags</label>
+                                                                            <div class="col-lg-9">
+                                                                                    <input class="form-control" type="text" value="" cols="" placeholder="(eg.Latestnews, technology, flying-robot  )">
+                                                                            </div>
+                                                                        </div>
+                                                                    <div class="form-group row">
+                                                                        <label class="col-lg-3 col-form-label form-control-label">Category</label>
+                                                                        <div class="col-lg-9">
+                                                                            <select id="user_time_zone" class="form-control" size="0">
+                                                                                <option value="Hawaii">Science</option>
+                                                                                <option value="Alaska">Maths</option>
+                                                                                <option value="Pacific Time (US &amp; Canada)">Technology</option>
+                                                                                <option value="Arizona">Physics</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label class="col-lg-3 col-form-label form-control-label"></label>
+                                                                        <div class="col-lg-9">
+                                                                            <div class="float-right">
+                                                                                    <input type="reset" class="btn btn-secondary" value="Cancel">
+                                                                                    <input type="button" class="btn btn-primary" value="Save Changes">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                            </form>
+                                                       
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </section>
+                                    <!-- ========== End you may also like========== -->
+                                   
+                                    <!-- ========== Start videos========== -->
+                                    <section class="videos mb-60" id="latest-videos">
+                                            <div class="container">
+                                                <div class="text-center mb-30">
+                                                        <h2 class="h2 mb-15 txt-r">Latest Videos</h2>
+                                                        <p class="p-bk mb-60">It is a long established fact that a reader will be distracted 
+                                                            by the readable content of a page when <br> looking at its layout.
+                                                        </p>
+                                                </div>
+                                                <div class="row d-flex align-items-center">
+                                                    <div class="col-lg-12">
+                                                        <div class="row mb-30">
+                                                            <div class="col-lg-4 col-md-4">
+                                                                <div class="card bx-shw bor-0">
+                                                                        <img class="card-img-top video-btn" src="img/videos-page/vi-2.png" alt="Card image" data-toggle="modal" data-src="https://www.youtube.com/embed/Jfrjeg26Cwk" data-target="#myModal">
+                                                                        <!-- <iframe width="420" height="345">
+                                                                        </iframe> -->
+                                                                        <!-- <button type="button" class="btn btn-primary video-btn" >
+                                                                            Play Vimeo Video
+                                                                          </button> -->
+                                                                        <div class="card-body">
+                                                                                <h4 class="card-title">We make it awesome
+                                                                                     fgsdfgdfgfdgdf
+                                                                                </h4>
+                                                                                <p class="p-new card-text">Lorem Ipsum is simply dummy text of the
+                                                                                        printing and typesetting industry.fhgfhghgfhhhgfhgfhfhhfgh</p>
+                                                                                <div class="pt-20 float-right">
+                                                                                        <p class="p-new card-text pb-0">10 OCT, 2019</p>
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 col-md-4">
+                                                                <div class="card bx-shw bor-0">
+                                                                        <img class="card-img-top video-btn" src="img/videos-page/vi-2.png" alt="Card image" data-toggle="modal" data-src="https://www.youtube.com/embed/Jfrjeg26Cwk" data-target="#myModal">
+                                                                        <!-- <iframe width="420" height="345">
+                                                                        </iframe> -->
+                                                                        <!-- <button type="button" class="btn btn-primary video-btn" >
+                                                                            Play Vimeo Video
+                                                                          </button> -->
+                                                                        <div class="card-body">
+                                                                                <h4 class="card-title">We make it awesome</h4>
+                                                                                <p class="p-new card-text">Lorem Ipsum is simply dummy text of the
+                                                                                        printing and typesetting industry.</p>
+                                                                                <div class="pt-20 float-right">
+                                                                                        <p class="p-new card-text pb-0">10 OCT, 2019</p>
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 col-md-4">
+                                                                <div class="card bx-shw bor-0">
+                                                                        <img class="card-img-top video-btn" src="img/videos-page/vi-2.png" alt="Card image" data-toggle="modal" data-src="https://www.youtube.com/embed/Jfrjeg26Cwk" data-target="#myModal">
+                                                                        <!-- <iframe width="420" height="345">
+                                                                        </iframe> -->
+                                                                        <!-- <button type="button" class="btn btn-primary video-btn" >
+                                                                            Play Vimeo Video
+                                                                          </button> -->
+                                                                        <div class="card-body">
+                                                                                <h4 class="card-title">We make it awesome</h4>
+                                                                                <p class="p-new card-text">Lorem Ipsum is simply dummy text of the
+                                                                                        printing and typesetting industry.</p>
+                                                                                <div class="pt-20 float-right">
+                                                                                        <p class="p-new card-text pb-0">10 OCT, 2019</p>
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-30">
+                                                            <div class="col-lg-4 col-md-4">
+                                                                <div class="card bx-shw bor-0">
+                                                                        <img class="card-img-top video-btn" src="img/videos-page/vi-2.png" alt="Card image" data-toggle="modal" data-src="https://www.youtube.com/embed/Jfrjeg26Cwk" data-target="#myModal">
+                                                                        <!-- <iframe width="420" height="345">
+                                                                        </iframe> -->
+                                                                        <!-- <button type="button" class="btn btn-primary video-btn" >
+                                                                            Play Vimeo Video
+                                                                          </button> -->
+                                                                        <div class="card-body">
+                                                                                <h4 class="card-title">We make it awesome</h4>
+                                                                                <p class="p-new card-text">Lorem Ipsum is simply dummy text of the
+                                                                                        printing and typesetting industry.</p>
+                                                                                <div class="pt-20 float-right">
+                                                                                        <p class="p-new card-text pb-0">10 OCT, 2019</p>
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 col-md-4">
+                                                                <div class="card bx-shw bor-0">
+                                                                        <img class="card-img-top video-btn" src="img/videos-page/vi-2.png" alt="Card image" data-toggle="modal" data-src="https://www.youtube.com/embed/Jfrjeg26Cwk" data-target="#myModal">
+                                                                        <!-- <iframe width="420" height="345">
+                                                                        </iframe> -->
+                                                                        <!-- <button type="button" class="btn btn-primary video-btn" >
+                                                                            Play Vimeo Video
+                                                                          </button> -->
+                                                                        <div class="card-body">
+                                                                                <h4 class="card-title">We make it awesome</h4>
+                                                                                <p class="p-new card-text">Lorem Ipsum is simply dummy text of the
+                                                                                        printing and typesetting industry.</p>
+                                                                                <div class="pt-20 float-right">
+                                                                                        <p class="p-new card-text pb-0">10 OCT, 2019</p>
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 col-md-4">
+                                                                <div class="card bx-shw bor-0">
+                                                                        <img class="card-img-top video-btn" src="img/videos-page/vi-2.png" alt="Card image" data-toggle="modal" data-src="https://www.youtube.com/embed/Jfrjeg26Cwk" data-target="#myModal">
+                                                                        <!-- <iframe width="420" height="345">
+                                                                        </iframe> -->
+                                                                        <!-- <button type="button" class="btn btn-primary video-btn" >
+                                                                            Play Vimeo Video
+                                                                          </button> -->
+                                                                        <div class="card-body">
+                                                                                <h4 class="card-title">We make it awesome</h4>
+                                                                                <p class="p-new card-text">Lorem Ipsum is simply dummy text of the
+                                                                                        printing and typesetting industry.</p>
+                                                                                <div class="pt-20 float-right">
+                                                                                        <p class="p-new card-text pb-0">10 OCT, 2019</p>
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-30">
+                                                            <div class="col-lg-4 col-md-4">
+                                                                <div class="card bx-shw bor-0">
+                                                                        <img class="card-img-top video-btn" src="img/videos-page/vi-2.png" alt="Card image" data-toggle="modal" data-src="https://www.youtube.com/embed/Jfrjeg26Cwk" data-target="#myModal">
+                                                                        <!-- <iframe width="420" height="345">
+                                                                        </iframe> -->
+                                                                        <!-- <button type="button" class="btn btn-primary video-btn" >
+                                                                            Play Vimeo Video
+                                                                          </button> -->
+                                                                        <div class="card-body">
+                                                                                <h4 class="card-title">We make it awesome</h4>
+                                                                                <p class="p-new card-text">Lorem Ipsum is simply dummy text of the
+                                                                                        printing and typesetting industry.</p>
+                                                                                <div class="pt-20 float-right">
+                                                                                        <p class="p-new card-text pb-0">10 OCT, 2019</p>
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 col-md-4">
+                                                                <div class="card bx-shw bor-0">
+                                                                        <img class="card-img-top video-btn" src="img/videos-page/vi-2.png" alt="Card image" data-toggle="modal" data-src="https://www.youtube.com/embed/Jfrjeg26Cwk" data-target="#myModal">
+                                                                        <!-- <iframe width="420" height="345">
+                                                                        </iframe> -->
+                                                                        <!-- <button type="button" class="btn btn-primary video-btn" >
+                                                                            Play Vimeo Video
+                                                                          </button> -->
+                                                                        <div class="card-body">
+                                                                                <h4 class="card-title">We make it awesome</h4>
+                                                                                <p class="p-new card-text">Lorem Ipsum is simply dummy text of the
+                                                                                        printing and typesetting industry.</p>
+                                                                                <div class="pt-20 float-right">
+                                                                                        <p class="p-new card-text pb-0">10 OCT, 2019</p>
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 col-md-4">
+                                                                <div class="card bx-shw bor-0">
+                                                                        <img class="card-img-top video-btn" src="img/videos-page/vi-2.png" alt="Card image" data-toggle="modal" data-src="https://www.youtube.com/embed/Jfrjeg26Cwk" data-target="#myModal">
+                                                                        <!-- <iframe width="420" height="345">
+                                                                        </iframe> -->
+                                                                        <!-- <button type="button" class="btn btn-primary video-btn" >
+                                                                            Play Vimeo Video
+                                                                          </button> -->
+                                                                        <div class="card-body">
+                                                                                <h4 class="card-title">We make it awesome</h4>
+                                                                                <p class="p-new card-text">Lorem Ipsum is simply dummy text of the
+                                                                                        printing and typesetting industry.</p>
+                                                                                <div class="pt-20 float-right">
+                                                                                        <p class="p-new card-text pb-0">10 OCT, 2019</p>
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </section>
+                                    <!-- ========== End videos========== -->
+                                
+                                    <!-- ========== Start last videos========== -->
+                                    <section class="last-videos mb-60" id="most-viewed">
+                                            <div class="container">
+                                                <div class="text-center mb-30">
+                                                    <h2 class="h2 mb-15 txt-r">Most Viewed</h2>
+                                                    <p class="p-bk mb-60">It is a long established fact that a reader will be distracted by
+                                                        the readable content of a page when <br> looking at its layout.
+                                                    </p>
+                                                </div>
+                                                <div class="row d-flex align-items-center">
+                                                    <div class="col-lg-12">
+                                                        <div class="row mb-30">
+                                                                <div class="col-lg-3 col-md-3">
+                                                                    <div class="card">
+                                                                            <img class="card-img-top" src="img/videos-page/vi-4.png" alt="Card image" data-toggle="modal" data-src="https://www.youtube.com/embed/Jfrjeg26Cwk" data-target="#myModal">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-3 col-md-3">
+                                                                        <div class="card">
+                                                                                <img class="card-img-top" src="img/videos-page/vi-5.png" alt="Card image" data-toggle="modal" data-src="https://www.youtube.com/embed/Jfrjeg26Cwk" data-target="#myModal">
+                                                                        </div>
+                                                                </div>
+                                                                <div class="col-lg-3 col-md-3">
+                                                                        <div class="card">
+                                                                                <img class="card-img-top" src="img/videos-page/vi-6.png" alt="Card image" data-toggle="modal" data-src="https://www.youtube.com/embed/Jfrjeg26Cwk" data-target="#myModal">
+                                                                        </div>
+                                                                </div>
+                                                                <div class="col-lg-3 col-md-3">
+                                                                        <div class="card">
+                                                                                <img class="card-img-top" src="img/videos-page/vi-7.png" alt="Card image" data-toggle="modal" data-src="https://www.youtube.com/embed/Jfrjeg26Cwk" data-target="#myModal">
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </section>
+                                    <!-- ========== End last videos========== -->
+
+                                 </div>
                         </div>
                        
                     </div>
-                   
                 </div>
             </div>
         </section>
+       
 
+        <!-- Modal -->
+     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>        
+              <!-- 16:9 aspect ratio -->
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div> 
         
             <!-- ========== Start Footer ========== -->
             <footer class="footer">
@@ -326,13 +728,111 @@
         <script src="js/plugins/jquery-3.3.1.min.js"></script>
         <script src="js/plugins/popper.min.js"></script>
         <script src="js/plugins/bootstrap.min.js"></script>
-        <!-- Particels JS -->
-        <script src="js/plugins/particles.min.js"></script>
+        
+         <!-- videos script start -->
+   
+         <!-- videos script end -->
+
         <script src="js/plugins/app.js"></script>
         <!-- Smooth Scrolling -->
         <script src="js/plugins/jquery.smoothscroll.min.js"></script>
         <!-- Magnific Popup -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-        <script src="js/main.js"></script>
+        <script src="js/page.js"></script>
+        <script src="js/nestable.js"></script>
+        <script type="text/javascript" src="js/slick.min.js"></script>
+         <!-- jQuery file upload -->
+         <script src="js/dropify.min.js"></script>
+
+
+    <script>
+    $(document).ready(function() {
+        // Basic
+        $('.dropify').dropify();
+
+        // Translated
+        $('.dropify-fr').dropify({
+            messages: {
+                default: 'Glissez-déposez un fichier ici ou cliquez',
+                replace: 'Glissez-déposez un fichier ou cliquez pour remplacer',
+                remove: 'Supprimer',
+                error: 'Désolé, le fichier trop volumineux'
+            }
+        });
+
+        // Used events
+        var drEvent = $('#input-file-events').dropify();
+
+        drEvent.on('dropify.beforeClear', function(event, element) {
+            return confirm("Do you really want to delete \"" + element.file.name + "\" ?");
+        });
+
+        drEvent.on('dropify.afterClear', function(event, element) {
+            alert('File deleted');
+        });
+
+        drEvent.on('dropify.errors', function(event, element) {
+            console.log('Has Errors');
+        });
+
+        var drDestroy = $('#input-file-to-destroy').dropify();
+        drDestroy = drDestroy.data('dropify')
+        $('#toggleDropify').on('click', function(e) {
+            e.preventDefault();
+            if (drDestroy.isDropified()) {
+                drDestroy.destroy();
+            } else {
+                drDestroy.init();
+            }
+        })
+    });
+
+
+    $(".add-videos-btn").click(function(){
+        $("#latest-videos").hide();
+        $("#most-viewed").hide();
+        $(".add-videos-btn").hide();
+        $(".back-videos-btn").show();
+        $("#add-videos-form").show();
+    });
+
+    $(".back-videos-btn").click(function(){
+        $("#latest-videos").show();
+        $("#most-viewed").show();
+        $(".add-videos-btn").show();
+        $(".back-videos-btn").hide();
+        $("#add-videos-form").hide();
+    });
+
+
+            
+        // Gets the video src from the data-src on each button
+
+        var $videoSrc;  
+        $('.video-btn').click(function() {
+            $videoSrc = $(this).data( "src" );
+        });
+        console.log($videoSrc);
+
+        
+        
+        // when the modal is opened autoplay it  
+        $('#myModal').on('shown.bs.modal', function (e) {
+            
+        // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+        $("#video").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0" ); 
+        })
+        
+
+
+        // stop playing the youtube video when I close the modal
+        $('#myModal').on('hide.bs.modal', function (e) {
+            // a poor man's stop video
+            $("#video").attr('src',$videoSrc); 
+        }) 
+    
+
+    </script>
+      
     </body>
 </html>
