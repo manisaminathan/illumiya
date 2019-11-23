@@ -335,8 +335,17 @@ a {
     border-radius: 25px;
     padding: 8px 15px;
 }
-  
-  
+.navbar .nav-item>.signin{
+    background-color: #ffa707;
+    color: #ffffff;
+    border-radius: 25px;
+    padding: 8px 15px;
+}
+.navbar .nav-item .signin:hover{
+    background-color: #ffe484 !important;
+    color: #5141a1;
+   
+}
 .footer-nav >.navbar {
     padding: 20px 0;
     background: #fff !important;
