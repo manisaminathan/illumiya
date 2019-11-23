@@ -58,4 +58,18 @@ $( '.navbar-nav a' ).on( 'click', function () {
 	$( this ).parent( 'li' ).addClass( 'active' );
 });
 
+$(document).ready(function() {
+	
+    $(".more").shorten({
+            "showChars" : 200,
+            "moreText"	: "read More",
+            "lessText"	: "Less",
+    });
 
+    $(".review-more").shorten({
+        "showChars" : 500,
+        "moreText"	: "read More",
+        "lessText"	: "Less",
+});
+   
+});
