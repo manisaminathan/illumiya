@@ -94,7 +94,7 @@ h5,
 h6 {
   color: #2c2b2e;
   font-family: "Gotham Rounded", sans-serif;
-  font-weight: 400; }
+  font-weight: 300; }
 
 h1 {
   line-height: 48px;
@@ -327,7 +327,7 @@ html body .vb {
 font weight
 *******************/
 html body .font-bold {
-  font-weight: 700; }
+  font-weight: 400; }
 
 html body .font-normal {
   font-weight: normal; }
@@ -5482,7 +5482,7 @@ sidebar navigation
         .sidebar-nav ul li a.active, .sidebar-nav ul li a:hover {
           color: #009efb; }
         .sidebar-nav ul li a.active {
-          font-weight: 400;
+          font-weight: 300;
           color: #263238; }
       .sidebar-nav ul li ul {
         padding-left: 30px; }
@@ -6737,7 +6737,7 @@ File: scss
   float: right;
   font-size: 12px;
   color: rgb(161, 161, 161);
-  padding: 0 10px;
+  padding: 0 5px;
 }
 .icon-lock-open{
   color: #1ad81a;

@@ -189,7 +189,7 @@ a.link:hover, a.link:focus {
 }
 
 .sidebar-nav > ul > li > a.active {
-  font-weight: 400;
+  font-weight: 300;
   background: #ffffff;
   color: #009efb;
 }
