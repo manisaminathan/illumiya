@@ -340,3 +340,13 @@ File: js
     return MetisMenu;
   }(jQuery);
 });
+
+
+$( '.navbar-nav a' ).on( 'click', function () {
+	$( '.navbar-nav' ).find( 'li.active' ).removeClass( 'active' );
+	$( this ).parent( 'li' ).addClass( 'active' );
+});
+
+$('.navbar-collapse a').click(function (e) {
+    $('.navbar-collapse').collapse('toggle');
+  });

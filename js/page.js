@@ -27,7 +27,10 @@ $(document).ready(function(){
      
 });
 
-
+$('.navbar-collapse a').click(function (e) {
+    $('.navbar-collapse').collapse('toggle');
+  });
+  
 $( '.navbar-nav a' ).on( 'click', function () {
 	$( '.navbar-nav' ).find( 'li.active' ).removeClass( 'active' );
 	$( this ).parent( 'li' ).addClass( 'active' );

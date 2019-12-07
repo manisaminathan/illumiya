@@ -305,6 +305,13 @@ a {
     padding: 0;
     margin: 0;
 }
+.navbar .nav-item .side-toggle:after,.navbar .nav-item .dropdown-toggle:after{
+    background-color: transparent !important;
+    background: transparent !important;
+  }
+  .navbar .nav-item .side-toggle:hover{
+    background-color: transparent !important;
+  }
 .navbar .nav-item .nav-link {
     color: #ffffff;
     font-size: 16px;
@@ -317,8 +324,12 @@ a {
 .navbar .nav-item .nav-link:hover {
     color:#654ac7;
   }
+  .navbar .nav-item.active >.sidebartoggler
+{
+    background-color:none !important;
+    color:#654ac7 !important;
+}
   .navbar .nav-item .nav-link:after {
-   
     display: block;
     position: absolute;
     top: 0;
@@ -346,11 +357,13 @@ a {
     padding: 6px 10px; 
   }
   .navbar .nav-item.active >.nav-link{
-	background-color:transparent;
-    border: 1.5px solid #fff;
-    border-radius: 25px;
-    padding: 6px 10px;
+	    background-color:transparent;
+        border: 1.5px solid #fff;
+        border-radius: 25px;
+        padding: 6px 10px 5px 8px;
+        
 }
+
 .signin{
     background-color: #ffa707;
     color: #ffffff !important;
@@ -371,6 +384,7 @@ a {
     color: #222d39 !important;
    
 }
+
 /*--------------------------------------------------
 [2. Start Slider]
 --------------------------------------------------*/
@@ -768,8 +782,8 @@ opacity: .99;
   box-shadow: 0 5em 5em -1em #ddd;
   transform: translateY(-0.25em);
 }
-.active_btn{
-    padding: 20px 70px;
+.active_btn {
+    padding: 15px 30px;
     border-radius: 100px;
     color: #fff;
     background: #2e2e2e;
@@ -777,21 +791,23 @@ opacity: .99;
     margin-top: 15px;
     border: none;
     z-index: 1;
-    margin-left: -20px;
-    margin-right: -20px;
+    margin-left: -10px;
+    margin-right: -15px;
     outline: none !important;
+    cursor: pointer;
 }
-.inactive_btn{
-    padding: 20px 70px;
+.inactive_btn {
+    padding: 15px 30px;
     border-radius: 100px;
     color: #2e2e2e;
     background: #dedede;
     margin-bottom: 30px;
     margin-top: 15px;
     border: 0;
-    margin-left: -20px;
-    margin-right: -20px;
+    margin-left: -10px;
+    margin-right: -15px;
     outline: none !important;
+    cursor: pointer;
 }
 .boost_section{
     background: url("../img/philo_bg.png") center center no-repeat;
@@ -1077,6 +1093,9 @@ opacity: .99;
         background: -webkit-linear-gradient(top left,#8066dc 0%,#5040a0 100%) !important;
         padding:30px;
     }
+    .navbar .navbar-brand{
+       width: 170px;
+    }
     .navbar .nav-item {
         margin: 0;
         padding: 0;
@@ -1208,6 +1227,35 @@ opacity: .99;
     }
     .price .box {
         margin-bottom: 40px;
+    }
+    .Particip_capsule{
+        display: inline-block;
+        font-weight: 400;
+        color: #212529;
+        text-align: center;
+        vertical-align: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-color: white;
+        border: 1px solid #ddd;
+        padding: 10px 25px !important;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: 100px;
+        transition: color .15s ease-in-out,
+        background-color .15s ease-in-out,
+        border-color .15s ease-in-out,
+        box-shadow .15s ease-in-out;
+    }
+    .Particip_capsule h3{
+        font-size: 14px;
+        margin: 0;
+    }
+    .Particip_capsule h4{
+        font-size: 18px;
+        margin: 0;
     }
  }
 
@@ -1613,5 +1661,27 @@ a.morelink {
 
 }
 
+
+.Particip_capsule{
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 30px 40px;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 100px;
+    transition: color .15s ease-in-out,
+    background-color .15s ease-in-out,
+    border-color .15s ease-in-out,
+    box-shadow .15s ease-in-out;
+}
 
 

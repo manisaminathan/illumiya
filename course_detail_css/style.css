@@ -1739,7 +1739,9 @@ Layouts
   .card-no-border .sidebar-footer {
     background: #ffffff; }
   .card-no-border .page-wrapper {
-    background: #f2f7f8; }
+    background: #f2f7f8; 
+    margin-top: 80px;
+  }
   .card-no-border .left-sidebar {
     -webkit-box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
     box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08); }
@@ -6561,13 +6563,15 @@ File: scss
  ============================================================== */
 @media (min-width: 1024px) {
   .page-wrapper {
-    margin-left: 300px; }
+    margin-left: 300px;
+    margin-top: 80px; }
   .footer {
     left: 300px; } }
 
 @media (max-width: 1023px) {
   .page-wrapper {
     margin-left: 60px;
+    margin-top: 80px;
     -webkit-transition: 0.2s ease-in;
     -o-transition: 0.2s ease-in;
     transition: 0.2s ease-in; }
@@ -6594,7 +6598,7 @@ File: scss
     display: inline-block;
     line-height: 26px; }
   .mini-sidebar .page-wrapper {
-    margin-left: 60px; }
+    margin-left: 60px; margin-top: 80px;}
   .mini-sidebar .footer {
     left: 60px; }
   .flex-wrap {
@@ -6645,7 +6649,8 @@ File: scss
   /*Sidebar and wrapper*/
   .mini-sidebar .page-wrapper {
     margin-left: 0px;
-    padding-top: 70px; }
+    padding-top: 70px;
+    margin-top: 80px; }
   .comment-text .comment-footer .action-icons {
     display: block;
     padding: 10px 0; }
@@ -6803,4 +6808,45 @@ File: scss
 .navbar-expand-md .navbar-nav .sidebartoggler  {
   display: none !important;
 }
+}
+
+.icon-arrow-left-circle:before {
+  content: "\e07a";
+  color: white;
+  font-size: 21px;
+}
+
+
+.ti-menu:before {
+  content: "\e68e";
+  color: white;
+  font-size: 21px;
+}
+
+.sidebartoggler:hover {
+  color: #5040a0 !important;
+}
+
+.foo{
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    z-index: 1;
+    background: #22d837;
+    border-radius: 40px;
+    border: none;
+    padding: 15px 16px;
+    cursor: pointer !important;
+    box-shadow: 0 4px 15px -1px rgba(10, 25, 59, 0.12);
+}
+.remarkContainer{
+  background-color: white !important;
+  position: absolute !important;
+  left: 1040px !important;
+  top: 582px !important;
+  padding: 15px !important;
+}
+.remarkContainer textarea{
+  width: 250px !important;
+    height: 140px !important ;
 }

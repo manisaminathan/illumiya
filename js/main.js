@@ -58,6 +58,10 @@ $( '.navbar-nav a' ).on( 'click', function () {
 	$( this ).parent( 'li' ).addClass( 'active' );
 });
 
+$('.navbar-collapse a').click(function (e) {
+    $('.navbar-collapse').collapse('toggle');
+  });
+
 $(document).ready(function() {
 	
     $(".more").shorten({
